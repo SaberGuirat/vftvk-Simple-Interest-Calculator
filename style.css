@@ -6,6 +6,13 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+}
+#container {
+  background-color: white;
+  margin: 10px auto;
+  width: 50%;
+  border-radius: 5%;
 }
 
 header {
