@@ -6,25 +6,28 @@ window.onload = function () {
 function compute(e) {
   e.preventDefault();
 
-  let ammount = document.getElementById("principal").value;
+  let ammount = document.getElementById("principal");
   let ineterestRate = document.getElementById("rate").value;
   let years = document.getElementById("years").value;
   let result = document.getElementById("result");
   let year = parseInt(new Date().getFullYear()) + +years;
-  if (!ammount || !ineterestRate || !years) {
+  if (!ammount.value || ammount.value <= 0) {
     result.style.color = "red";
-    result.innerHTML = "Error please fill in all fields ! ";
+    result.innerHTML =
+      "Error : please provide a valid positive ammount number! ";
+    ammount.focus();
   } else {
     result.style.color = "black";
     result.innerHTML =
-      "if you deposit " +
-      ammount +
-      ",<br/>at an interest rate of " +
+      "if you deposit <span>" +
+      ammount.value +
+      "</span>,<br/>at an interest rate of <span>" +
       ineterestRate +
-      "%.<br/>You will receive an ammount of " +
-      ((ammount * ineterestRate) / 100) * years +
-      ",<br/>in the year " +
-      year;
+      "%</span>.<br/>You will receive an ammount of <span> " +
+      ((ammount.value * ineterestRate) / 100) * years +
+      "</span>,<br/>in the year <span>" +
+      year +
+      "</span>";
   }
 }
 

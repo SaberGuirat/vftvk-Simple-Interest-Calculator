@@ -38,6 +38,10 @@ button {
 #result {
   margin: 20px;
 }
+
+#result span {
+  background-color: yellow;
+}
 footer {
   padding: 20px;
   font-weight: bold;
