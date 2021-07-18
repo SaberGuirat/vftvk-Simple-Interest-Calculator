@@ -1,4 +1,44 @@
-body {background-color:tan;}
-h1{color:green;}
+* {
+  box-sizing: border-box;
+}
 
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
+header {
+  padding: 20px;
+}
+h1 {
+  color: grey;
+  font-weight: bolder;
+}
+
+form {
+  margin-left: 10%;
+}
+
+.form-group {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+}
+label {
+  margin: 5 20px;
+  font-size: medium;
+  font-weight: bold;
+}
+button {
+  margin: 0 20px;
+}
+#result {
+  margin: 20px;
+}
+footer {
+  padding: 20px;
+  font-weight: bold;
+}
